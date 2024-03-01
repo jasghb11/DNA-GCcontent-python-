@@ -1,0 +1,42 @@
+# this basic sequence contains the sequence of the pUC19 plasmid. this high-copy plasmid is commonly 
+# used for cloning and gene expression studies. 
+
+#the following is a truncated sample of the sequence pUC19 plasmid.
+
+with open('C:/Users/Jason/Documents/insulin_sequence_KR710185_1.txt', 'r') as file:
+    dna_sequences = [line.strip() for line in file.readlines()]
+
+#the following is a count of GC in the DNA sample, and then a print statement showing the GC percentage
+# GC content is widely used to measure the genomic nucleotide composition.
+
+countCG = 0
+countAT = 0
+countATG = 0
+
+for DNA in dna_sequences:
+    countCG += DNA.count('gc')
+    countAT += DNA.count('at')
+    countATG += DNA.count('atg')
+
+print(countCG)
+print(countATG)
+print(countAT)
+
+total_nucleotides = sum(len(line) for line in dna_sequences)
+
+def GCcontent(dna_sequences):
+    totalGC = countCG
+    GCcontent = 100* (totalGC) / (total_nucleotides)
+    return GCcontent
+
+def ATGCratio(dna_sequences):
+    totalGC = countCG
+    totalAT = countAT
+    ATGCratio = (totalAT) / (totalGC)
+    return ATGCratio
+
+ATGC = ATGCratio(dna_sequences)
+GC = GCcontent(dna_sequences)
+print(total_nucleotides)
+print("The DNA sample has a GC-content of %.2f percent and is of length %d\n" % (GC, total_nucleotides))
+print("The ratio of AT to GC content is %.2f " % (ATGC)) 
