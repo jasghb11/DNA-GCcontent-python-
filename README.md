@@ -12,5 +12,5 @@ For instance, GC pairs are generally stronger bonds than AT bonds, meaning that 
 **ATGC Ratios**
 The ATGC ratio is the relative proportion of adenine (A) and thymine (T) compared to guanine (G) and cytosine (C) in a sample. This ratio can share insights into the characteristics of a genetic sample. As mentioned earlier, GC content is an indicator of stability, meaning that a lower ratio of AT to GC could indicate greater stability for the molecule. ATGC rations can also explain gene expression levels, as regions with a significant discrepancy between the amount of GC to AT content, could be used for different processes. 
 
-In order to use this Python script, you will need to have a file on hand that contains the nucleotide listings of a sequenced gene. 
+In order to use this Python script, you will need to have a file on hand that contains the nucleotide listings of a sequenced gene. You will also need access to Python as well as some basic libraries to calculate the count and percentage equations. 
 
