@@ -3,7 +3,7 @@
 
 #the following is a truncated sample of the sequence pUC19 plasmid.
 
-with open('C:/Users/Jason/Documents/insulin_sequence_KR710185_1.txt', 'r') as file:
+with open('INSERT YOUR FILE PATHWAY HERE/insulin_sequence_KR710185_1.txt', 'r') as file:
     dna_sequences = [line.strip() for line in file.readlines()]
 
 #the following is a count of GC in the DNA sample, and then a print statement showing the GC percentage
